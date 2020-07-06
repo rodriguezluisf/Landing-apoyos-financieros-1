@@ -1,0 +1,27 @@
+/* ---------------------------------- footer -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+footer{
+	text-align: center;
+	padding: 1rem 2rem 2rem;
+	
+	hr{
+		max-width: 600px;
+		margin: auto;
+		background: $color_yellow;
+		border-width: 2px;
+		border-color: $color_yellow;
+		border-style: solid;
+	}
+	
+	p{
+		text-align: center;
+		margin: 1rem auto;
+	}
+	
+}
+
+
+
+

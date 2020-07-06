@@ -1,0 +1,26 @@
+/* ---------------------------------- Opciones -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+section.renovacion{
+	grid-gap: 2rem;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	
+	@media (max-width: $breakpoint_3){
+		@include grid-parent-1-columns (1fr);
+	}
+	
+	.txt{
+		padding: 2rem 0;
+	}
+	
+	.caja{
+		@include caja;
+	}
+	
+}
+
+
+
+

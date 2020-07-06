@@ -1,0 +1,126 @@
+/* ---------------------------------- Opciones -----------------------------
+	------------------------------------------------------------------------------- */
+
+
+section.opciones{
+	margin-top: 13rem;
+	grid-gap: 1rem;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1.8fr);
+	
+	@media (max-width: $breakpoint_2){
+		margin-top: 5rem;
+		@include grid-parent-2-columns (1fr, 2.5fr);
+	}
+	
+	@media (max-width: $breakpoint_3){
+		@include grid-parent-1-columns (1fr);
+	}
+	
+	.txt{
+		
+		>div{
+			padding: 2rem;
+			position: relative;
+			background: transparentize($color_green, .85);
+			@include display-grid;
+			@include grid-parent-2-rows (auto, auto);
+			@include grid-child-column (1, 2);
+			@include grid-child-row (1, 4);
+			
+			&:before{
+				content: "";
+				background: transparentize($color_green, .85);
+				height: 100%;
+				width: 100%;
+				position: absolute;
+				top: 0;
+				left: -100%;
+			}
+		
+		}
+		
+	}
+	
+	.boxes{
+		grid-gap: 1rem;
+		@include display-grid;
+		@include grid-parent-3-columns (1fr, 1fr, 1fr);
+		
+		@media (max-width: $breakpoint_3_1){
+			grid-gap: 2rem;
+			@include grid-parent-1-columns (1fr);
+		}
+		
+		.box{
+			padding: 1rem 1rem 1.5rem;
+			min-height: 135px;
+			position: relative;
+			border: 1px solid $color_green_dark;
+			@include display-grid;
+			
+			>img{
+				align-self: center;
+				justify-self: center;
+			}
+			
+			a.more_btn{
+				position: absolute;
+				bottom: -11%;
+				left: 45%;
+				cursor: pointer;
+				
+				@media (max-width: $breakpoint_3_1){
+					bottom: -5%;
+				}
+				
+				&:after{
+					display: none;
+				}
+			}
+			
+		}
+		
+		.boxes_mobile{
+			display: none;
+			@media (max-width: $breakpoint_3_1){
+				display: block;
+			}
+			
+			.content-acordion{
+				display: none;
+				@include boxes;
+			}
+			
+			.content-acordion.open{
+				display: block;
+			}
+			
+		}
+		
+		.boxes_desktop{
+			margin: 1rem 0;
+			@include grid-child-column (1, 4);
+			
+			@media (max-width: $breakpoint_3_1){
+				display: none;
+			}
+			
+			.content-acordion{
+				display: none;
+				@include boxes;
+			}
+			
+			.content-acordion.open{
+				display: block;
+			}
+			
+		}
+		
+	}
+	
+}
+
+
+
+
