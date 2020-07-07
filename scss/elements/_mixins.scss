@@ -304,7 +304,7 @@ $font_family_group: $family) {
 // ------------------------ Boxes --------------------------- //
 // --------------------------------------------------- //
 @mixin boxes{
-	padding: 1rem;
+	padding: 1rem 2rem;
 	background: transparentize($color_green, .85);
 	position: relative;
 	
@@ -313,6 +313,18 @@ $font_family_group: $family) {
 		top: -0.9rem;
 		right: -0.7rem;
 		cursor: pointer;
+		background: url('../../images/svg/x-btn.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 1.7rem;
+		width: 1.7rem;
+		
+		&:hover{
+			background: url('../../images/svg/x-btn-green.svg');
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+		
 	}
 }
 

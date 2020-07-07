@@ -79,12 +79,12 @@ h5{
 	display: block;
 	margin: 0;
 	@include font_universal (
-		$font_family_line_height: 19px,
-		$font_family_weight: 300,
+		$font_family_line_height: 20px,
+		$font_family_weight: 700,
 		$font_family_size: 16px,
 		$font_family_color: $color_text,
 		$font_family_letter_spacing: 0,
-		$font_family_group: $font_acherus_ultralight
+		$font_family_group: $font_family_din
 	);
 }
 
