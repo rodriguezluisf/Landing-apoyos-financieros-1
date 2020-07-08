@@ -225,5 +225,49 @@
 	});
 	
 	
+	// -------------
+	// rotabanner icetex
+	
+	$(document).ready(function(){
+		$('.slider-icetex').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			infinite: false,
+			arrows:true,
+			infinite: true,
+			cssEase: 'linear',
+			swipe: false,
+			pauseOnHover:true,
+			dots: true,
+			prevArrow: $('.next2'),
+			nextArrow: $('.prev2')
+		});
+	});
+	
+	
+	// -------------
+	// rotabanner pichincha
+	
+	$(document).ready(function(){
+		$('.slider-pichincha').slick({
+			slidesToShow: 1,
+			slidesToScroll: 1,
+			autoplay: true,
+			autoplaySpeed: 3000,
+			infinite: false,
+			arrows:true,
+			infinite: true,
+			cssEase: 'linear',
+			swipe: false,
+			dots: true,
+			pauseOnHover:true,
+			prevArrow: $('.next'),
+			nextArrow: $('.prev')
+		});
+	});
+	
+	
 })(jQuery);
 

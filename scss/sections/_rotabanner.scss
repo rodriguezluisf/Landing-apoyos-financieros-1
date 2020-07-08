@@ -1,0 +1,79 @@
+/* ---------------------------------- Rotabanner -----------------------------
+	------------------------------------------------------------------------------- */
+
+.container_slider{
+	position: relative;
+	
+	@media (max-width: $breakpoint_3){
+		text-align: center;
+	}
+	
+	
+	.slick-slider{
+		z-index: 0;
+		max-width: 85%;
+		margin: auto;
+		
+		@media (max-width: $breakpoint_3){
+			max-width: 100%;
+		}
+		
+		.cards{
+			padding: 1rem;
+			text-align: center;
+			
+			img{
+				max-height: 500px;
+				vertical-align: middle;
+				width: auto;
+				margin: 0 auto; /* it centers any block level element */
+			}
+			
+		}
+		
+	}
+	
+	.slick-dots{
+		
+		li{
+			margin: auto;
+			
+			&:before{
+				font-size: 1.5em;
+				color: $color_green_dark;
+			}
+			
+			button{
+				
+				&:before{
+					display: none;
+				}
+				
+			}
+			
+		}
+		
+	}
+		
+	.slick-arrow.prev{
+		@include slider_left;
+	}
+		
+	.slick-arrow.next{
+		@include slider_right;
+		
+	}
+	
+	.slick-arrow.prev2{
+		@include slider_left;
+		
+	}
+		
+	.slick-arrow.next2{
+		@include slider_right;
+	}
+	
+}
+
+
+

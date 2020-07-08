@@ -362,5 +362,37 @@ $font_family_group: $family) {
 
 
 
+// ------------------------ Cajas --------------------------- //
+// --------------------------------------------------- //
+
+@mixin slider_left{
+	position: absolute;
+	right: 0;
+	z-index: 100;
+	top: 50%;
+	cursor: pointer;
+	
+	@media (max-width: $breakpoint_3){
+		position: relative;
+		top: initial;
+		display: inline-block;
+		margin-left: .5rem
+	}
+}
+
+@mixin slider_right{
+	position: absolute;
+	left: 0;
+	z-index: 100;
+	top: 50%;
+	cursor: pointer;
+	
+	@media (max-width: $breakpoint_3){
+		position: relative;
+		top: initial;
+		display: inline-block;
+		margin-right: .5rem
+	}
+}
 
 
