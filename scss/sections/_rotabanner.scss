@@ -14,9 +14,11 @@
 		max-width: 85%;
 		margin: auto;
 		
-		@media (max-width: $breakpoint_3){
-			max-width: 100%;
+		@media (max-width: $breakpoint_3_1){
+			max-width: 65vw;
+			width: 100%;
 		}
+		
 		
 		.cards{
 			padding: 1rem;
@@ -34,6 +36,10 @@
 	}
 	
 	.slick-dots{
+		
+		@media (max-width: $breakpoint_3_1){
+			display: none !important;
+		}
 		
 		li{
 			margin: auto;
@@ -74,6 +80,86 @@
 	}
 	
 }
+
+.carrusel-convocatoria .container.galeria .owl-nav {
+        margin: 1rem 0 .5rem;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-nav span {
+        color: #7BC142;
+        font-family: "latolight";
+        font-weight: normal;
+        font-size: 60px;
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-nav button:hover {
+        background: none;
+        opacity: 0.4;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-dots button span {
+        background: #7bc142;
+        margin: 0 3px;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-dots button span:hover {
+        opacity: 0.2;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-dots button.active span {
+        background: #f29049;
+        margin: 0 3px;
+    }
+    
+    .carrusel-convocatoria .container.galeria {
+        margin: 3rem 0;
+    }
+    
+    .carrusel-convocatoria .container.galeria h4 {
+        color: #7BC142;
+        font-family: "latoblack";
+        font-weight: normal;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        line-height: 15px;
+        padding: 5px 0 14px;
+        margin-bottom: 8px;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-nav {
+        margin: 1rem 0 .5rem;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-nav span {
+        color: #7BC142;
+        font-family: "latolight";
+        font-weight: normal;
+        font-size: 60px;
+        padding: 0;
+        margin: 0 0.5rem;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-nav button:hover {
+        background: none;
+        opacity: 0.4;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-dots button span {
+        background: #7bc142;
+        margin: 0 3px;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-dots button span:hover {
+        opacity: 0.2;
+    }
+    
+    .carrusel-convocatoria .container.galeria .owl-dots button.active span {
+        background: #f29049;
+        margin: 0 3px;
+    }
 
 
 

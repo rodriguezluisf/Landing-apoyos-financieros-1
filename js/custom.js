@@ -224,6 +224,14 @@
 		$(".acordion8 a").toggleClass("open");
 	});
 	
+	$(document).ready(function(){
+		$(window).on('orientationchange', function() {
+			$('.slider-icetex')[0].slick.refresh();
+			$('.slider-pichincha')[0].slick.refresh();
+		});
+	});
+	
+	
 	
 	// -------------
 	// rotabanner icetex
@@ -231,6 +239,7 @@
 	$(document).ready(function(){
 		$('.slider-icetex').slick({
 			slidesToShow: 1,
+			centerMode: true,
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 3000,
@@ -241,8 +250,9 @@
 			swipe: false,
 			pauseOnHover:true,
 			dots: true,
+			mobileFirst: true,
 			prevArrow: $('.next2'),
-			nextArrow: $('.prev2')
+			nextArrow: $('.prev2'),
 		});
 	});
 	
@@ -253,6 +263,7 @@
 	$(document).ready(function(){
 		$('.slider-pichincha').slick({
 			slidesToShow: 1,
+			centerMode: true,
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 3000,
@@ -263,8 +274,9 @@
 			swipe: false,
 			dots: true,
 			pauseOnHover:true,
+			mobileFirst: true,
 			prevArrow: $('.next'),
-			nextArrow: $('.prev')
+			nextArrow: $('.prev'),
 		});
 	});
 	
