@@ -40,6 +40,28 @@ section.renovacion{
 	
 	.caja{
 		@include caja;
+		position: relative;
+	}
+	
+	.resultados{
+		display: none;
+		padding: 1rem;
+		position: relative;
+		border-top: 2px solid transparentize($color_green_dark, .85);
+		background: $color-brand-white;
+		@include grid-child-column (1, 4);
+		
+		.close-button{
+			position: absolute;
+			top: 0.5rem;
+			right: 0.5rem;
+			cursor: pointer;
+		}
+		
+	}
+	
+	.resultados.open{
+		display: block;
 	}
 	
 }

@@ -300,6 +300,36 @@ $font_family_group: $family) {
 	}
 }
 
+@mixin btn_white{
+	background: $color-brand-white;
+	border: 2px solid $color_yellow;
+	border-radius: 5rem;
+	padding: 0.6rem 1rem;
+	margin: 1rem;
+	cursor: pointer;
+	display: inline-block;
+	@include font_universal (
+		$font_family_line_height: 26px,
+		$font_family_weight: 300,
+		$font_family_size: 18px,
+		$font_family_color: $color_text,
+		$font_family_letter_spacing: 0,
+		$font_family_group: $font_acherus_bold
+	);
+	img{
+		display: inline-block;
+		margin-right: .5rem;
+		vertical-align: middle;
+	}
+	&:after{
+		display: none;
+	}
+	&:hover{
+		background: $color_yellow;
+		color: $color_text;
+	}
+}
+
 
 // ------------------------ Boxes --------------------------- //
 // --------------------------------------------------- //
@@ -354,6 +384,12 @@ $font_family_group: $family) {
 	
 	a{
 		place-self: center;
+		font-size: 16px;
+		line-height: 18px;
+	}
+	
+	a.open{
+		@include btn_white;
 		font-size: 16px;
 		line-height: 18px;
 	}

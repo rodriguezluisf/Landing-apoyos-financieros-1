@@ -232,6 +232,20 @@
 	});
 	
 	
+	// -------------
+	// crédito con la universidad
+	
+	$(".credito_universidad .btn_yellow").click(function() {
+		$(".resultados_credito").toggleClass("open");
+		$(".credito_universidad .btn_yellow").toggleClass("open");
+	});
+	
+	$(".resultados_credito .close-button").click(function() {
+		$(".resultados_credito").toggleClass("open");
+		$(".credito_universidad .btn_yellow").toggleClass("open");
+	});
+	
+	
 	
 	// -------------
 	// rotabanner icetex
@@ -243,7 +257,6 @@
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 3000,
-			infinite: false,
 			arrows:true,
 			infinite: true,
 			cssEase: 'linear',
@@ -263,16 +276,15 @@
 	$(document).ready(function(){
 		$('.slider-pichincha').slick({
 			slidesToShow: 1,
-			centerMode: true,
+			centerMode: false,
 			slidesToScroll: 1,
 			autoplay: true,
-			autoplaySpeed: 3000,
-			infinite: false,
-			arrows:true,
+			autoplaySpeed: 100000,
 			infinite: true,
+			arrows:true,
 			cssEase: 'linear',
 			swipe: false,
-			dots: true,
+			//dots: true,
 			pauseOnHover:true,
 			mobileFirst: true,
 			prevArrow: $('.next'),
